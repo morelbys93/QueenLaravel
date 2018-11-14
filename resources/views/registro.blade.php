@@ -22,10 +22,9 @@
 	<body>
 	<div class="container">
 		<!-- cabecera -->
-		<h1
-		<a href="home.php">
-      <header class="main-header">
-      <img src="images/queen_candy.png" alt="logotipo" class="logo">
+		<h1>		
+      <header class="main-header"><a href="/">
+      <img src="images/queen_candy.png" alt="logotipo" class="logo"></a>
 		  </header>
     </a>
 		<!-- REGISTRO -->

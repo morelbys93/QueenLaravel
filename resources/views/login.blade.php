@@ -14,11 +14,13 @@
     <link rel="icon" href="images/ico.jpg" type="image/x-icon">
   </head>
   <body>
-    <a href="home">
+    
       <header class="main-header">
-      <img src="images/queen_candy.png" alt="logotipo" class="logo">
+        <a href="/">
+          <img src="images/queen_candy.png" alt="logotipo" class="logo">
+        </a>  
       </header>
-    </a>
+    
     <div class="container">
       <form class="form" role="form" action="" method="post" enctype="multipart/form-data">
         <input type="text" id="usuario" name="username" placeholder="Ingrese su usuario">

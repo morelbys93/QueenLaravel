@@ -22,7 +22,7 @@
 
 </header>
   <div class="main-container">
-    <a href="home.php">
+    <a href="/">
       <header class="main-header">
       <img src="images/queen_candy.png" alt="logotipo" class="logo">
 		  </header>
