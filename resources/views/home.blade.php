@@ -31,8 +31,8 @@
 					<div class="menu">
 						<ul>
 						<li><a href="registro"><i class="fas fa-registered"></i> Registro</a></li>
-						<li><a href="login.php"> <i class="fas fa-sign-in-alt"></i> Login</a> </li>
-						<li><a href="pregfrec.php"><i class="fas fa-question"></i> FAQ</a></li>
+						<li><a href="login"> <i class="fas fa-sign-in-alt"></i> Login</a> </li>
+						<li><a href="pregfrec"><i class="fas fa-question"></i> FAQ</a></li>
 				  	</ul>
 					</div>
 			</nav>

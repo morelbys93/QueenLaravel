@@ -13,3 +13,5 @@
 
 Route::get('/', 'HomeController@show');
 Route::get('/registro', 'RegistroController@show');
+Route::get('/login', 'LoginController@show');
+Route::get('/pregfrec', 'PregfrecController@show');

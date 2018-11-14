@@ -1,12 +1,3 @@
-
-
-  <?php
-  require "functions.php";
-  if ($_POST) {
-    logearUsuario($_POST);
-  }
-  ?>
-
   <!DOCTYPE html>
   <html>
   <head>
@@ -23,7 +14,7 @@
     <link rel="icon" href="images/ico.jpg" type="image/x-icon">
   </head>
   <body>
-    <a href="home.php">
+    <a href="home">
       <header class="main-header">
       <img src="images/queen_candy.png" alt="logotipo" class="logo">
       </header>
@@ -33,7 +24,7 @@
         <input type="text" id="usuario" name="username" placeholder="Ingrese su usuario">
         <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su contraseña">
         <button type="submit">login</button>
-        <p class="registro">No se encuentra registrado?<a href="registro.php"> Crear una cuenta</a></p>
+        <p class="registro">No se encuentra registrado?<a href="registro"> Crear una cuenta</a></p>
       </form>
     </div>
   </body>
