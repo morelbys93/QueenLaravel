@@ -1,41 +1,18 @@
 
 <!DOCTYPE html>
-<html>
-	<head> <!--  -->
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- My CSS -->
-		<link rel="stylesheet" href="css/style.css">
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- Font Awesome -->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/style.css">
-		<!-- Favicon -->
-		<link rel="icon" href="images/ico.jpg" type="image/x-icon">
-		<!-- titulo -->
-		<title> QueenCandy | Home ~ </title>
-		</head>
+<html lang = "en">
+
+@include ("front")
+
 
 	<body>
-	
+
 	<div class="container">
 		<!-- cabecera -->
 		<header class="main-header">
 		<img src="images/queen_candy.png" alt="logotipo" class="logo">
 			<!-- barra de navegacion -->
-			<nav class="main-nav">
-				 <!-- <li><a href="#" class="toggle-nav"><span class="fa fa-bars"></span></a></li>-->
-					<div class="menu">
-						<ul>
-						<li><a href="registro"><i class="fas fa-registered"></i> Registro</a></li>
-						<li><a href="login"> <i class="fas fa-sign-in-alt"></i> Login</a> </li>
-						<li><a href="pregfrec"><i class="fas fa-question"></i> FAQ</a></li>
-				  	</ul>
-					</div>
-			</nav>
+
 		</header>
 		<!-- Carousel -->
 		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
