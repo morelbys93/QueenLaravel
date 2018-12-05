@@ -11,6 +11,7 @@
 |
 */
 
+<<<<<<< HEAD
 Route::get('/', 'HomeController@show');
 Route::get('/registro', 'RegistroController@show');
 Route::get('/login', 'LoginController@show');
@@ -31,3 +32,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+=======
+Auth::routes();
+
+Route::get('/', 'HomeController@index');
+Route::get('/faqs', 'FaqsController@index');
+>>>>>>> c4a8b514a4f3c9e353cb52effcb323ebf47c80cc

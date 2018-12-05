@@ -13,7 +13,11 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
+<<<<<<< HEAD
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+=======
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+>>>>>>> c4a8b514a4f3c9e353cb52effcb323ebf47c80cc
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
@@ -43,11 +47,19 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
+<<<<<<< HEAD
                             <li class="nav-item">
                                 @if (Route::has('register'))
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 @endif
                             </li>
+=======
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>
+                            @endif
+>>>>>>> c4a8b514a4f3c9e353cb52effcb323ebf47c80cc
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
