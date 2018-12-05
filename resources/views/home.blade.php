@@ -2,9 +2,6 @@
 <!DOCTYPE html>
 <html lang = "en">
 
-@include ("front")
-
-
 	<body>
 
 	<div class="container">
