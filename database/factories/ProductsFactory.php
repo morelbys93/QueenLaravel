@@ -12,5 +12,7 @@ $factory->define(\App\Product::class, function (Faker $faker) {
       'image'=> $faker->image($path, 200, 200,'food'),
       'price' => $faker->randomFloat(2, 300, 4000),
       'type' => $type_[rand(0,1)],
+      'promoted' => 0,
+      'slider' =>0,
     ];
 });

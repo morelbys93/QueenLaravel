@@ -19,6 +19,8 @@ class CreateProductsTable extends Migration
           $table->string ('image');
           $table->float('price');
           $table->string('type');
+          $table->smallInteger('promoted')->default(0);
+          $table->smallInteger('slider')->default(0);
           $table->timestamps();
 
       });
