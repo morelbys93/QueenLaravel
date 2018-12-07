@@ -1,4 +1,4 @@
-@extends('app')
+
 	<h1>Agregar Productos</h1>
 {{--
 	@if (count($errors))
@@ -41,4 +41,3 @@
             <label for="slider">Carrousel</label>
             <input class="form-control" type="number" name="slider" id="slider">
         </div>
-@endsection

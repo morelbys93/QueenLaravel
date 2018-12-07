@@ -16,3 +16,4 @@ Auth::routes();
 Route::get('/', 'HomeController@index');
 Route::get('/faqs', 'FaqsController@index');
 Route::get('/productos', 'ProductController@show');
+Route::get('/create', 'ProductController@show');

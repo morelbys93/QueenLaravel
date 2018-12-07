@@ -8,6 +8,6 @@ class ProductController extends Controller
 {
     public function show()
     {
-        return view('product');
+        return view('products.create');
     }
 }
