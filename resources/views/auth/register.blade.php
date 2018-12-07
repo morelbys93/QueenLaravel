@@ -1,8 +1,11 @@
 @extends('layouts.app')
+<html><title>QueenCandy - Registro </title>
+<link rel="stylesheet" href="css/styleregister.css"></html>
+
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center"    style="background-color: black;"  >
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Register') }}</div>

@@ -21,7 +21,7 @@
 	<div class="container">
 		<!-- cabecera -->
 		<header class="main-header">
-		<a class="logo" href="{{ url('/') }}"> <img src="images/queen_candy.png" alt="logotipo"> </a>
+		<a class="logo" href="{{ url('/') }}"> <img src="images/ico.png" alt="logotipo"> </a>
 			<!-- barra de navegacion -->
 			<nav class="main-nav">
 				 <!-- <li><a href="#" class="toggle-nav"><span class="fa fa-bars"></span></a></li>-->
@@ -96,8 +96,9 @@
 	  </a>
 		</div>
 		<!-- productos -->
-	<h2 class="important_sections">Especialidades</h2>
+	<h2 class="important_sections">Productos</h2>
 		<!-- Cuerpo principal del sitio -->
+		
 		<section class="products"><!-- Contenedor de todos los productos -->
 			<div class="row-1">
 				<article class="producto"><!-- Contenedor de cada producto -->

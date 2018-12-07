@@ -28,6 +28,7 @@ body {
 
 }
 
+
 /* Header */
 .main-header {
 	display: flex;
@@ -251,14 +252,15 @@ div.menu {
 		}
 		.logo {
 
-		width: 120px;
-		height: 90px;
+		width: 40px;
+		height: 30px;
 		display: flex;
-		background-color: #000;
-
-
+		background-color: none;
+        margin-right: 20px;
 		}
+        a {
 
+        }
 		.main-footer {
 			width: 100%;
 			text-align: center;
