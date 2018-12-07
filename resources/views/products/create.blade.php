@@ -31,7 +31,7 @@
         </div>
         <div class="form-group">
             <label for="type">Tipo</label>
-            <input class="form-control" type="number" name="type" id="type"  value="{{old('type')}}">
+            <input class="form-control" type="number" name="type" id="type"  value="{{old('type')}}"/>
         </div>
         <div class="form-group">
             <label for="promoted">Promocion</label>
@@ -41,3 +41,7 @@
             <label for="slider">Carrousel</label>
             <input class="form-control" type="number" name="slider" id="slider">
         </div>
+        <div class="form-group">
+        	<button class="btn btn-primary" type="submit" name="button">Agregar</button>
+        </div>
+    </form>
