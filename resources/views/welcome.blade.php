@@ -1,3 +1,6 @@
+@extends('layouts.app')
+<link rel="stylesheet" href="css/styleregister.css"></html>
+@section('content')
 <!DOCTYPE html>
 <html>
 	<head> <!--  -->
