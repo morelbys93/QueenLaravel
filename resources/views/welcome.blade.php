@@ -1,6 +1,6 @@
 @extends('layouts.app')
 <link rel="stylesheet" href="css/styleregister.css"></html>
-@section('content')
+
 <!DOCTYPE html>
 <html>
 	<head> <!--  -->
@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Font Awesome -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/styles.css">
+	 <!-- SEBA: SUSPENDO MOMENTANEAMENTE EL CSS PRINCIPAL	<link rel="stylesheet" href="css/styles.css"> -->
 		<!-- Favicon -->
 		<link rel="icon" href="images/ico.jpg" type="image/x-icon">
 		<!-- titulo -->
@@ -20,11 +20,11 @@
 		</head>
 
 	<body>
-
+			@section('content')
 	<div class="container">
 		<!-- cabecera -->
 		<header class="main-header">
-		<a class="logo" href="{{ url('/') }}"> <img src="images/ico.png" alt="logotipo"> </a>
+		<!-- <a class="logo" href="{{ url('/') }}"> <img src="images/ico.png" alt="logotipo"> </a>-->
 			<!-- barra de navegacion -->
 			<nav class="main-nav">
 				 <!-- <li><a href="#" class="toggle-nav"><span class="fa fa-bars"></span></a></li>-->
@@ -59,7 +59,8 @@
 		              </form>
 		          	</li>
 							@endguest
-								<li><a href="/faqs"><i class="fas fa-question"></i> FAQ</a></li>
+								<li><a href="/productos"></i> Productos</a></li>
+								<li><a href="/faqs"><i class="fas fa-question"></i> FAQ'S</a></li>
 				  	</ul>
 					</div>
 			</nav>
@@ -151,4 +152,5 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		</div>
 	</body>
+	@endsection
 </html>
