@@ -12,11 +12,11 @@
        @foreach ($products as $product)
         <div class="col-md-4 product-grid">   
           <div class="image text-center">
-            <a href="#"> 
-             <img src={{$product->image}} alt={{$product->name}} class="img-thumbnail">
+            <a href="/vista-producto"> 
+             <img src= "/storage/{{$product->image}}" alt="{{$product->name}}"  class="img-thumbnail">
+             <h4 class="text-center">{{$product->name}}</h4>  
             </a>
-           </div>
-        <h4 class="text-center">{{$product->name}}</h4>        
+           </div>              
         <h6 class="text-center">{{$product->description}}</h5>     
         <h4 class="text-center">Precio: ${{$product->price}}</h2>  
         <button type="button" class="btn btn-primary">COMPRAR</button> 
