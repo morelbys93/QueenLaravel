@@ -2,34 +2,16 @@
 <link rel="stylesheet" href="../css/styleregister.css">
 @section('content')
 
-
-
-<!--<div class="container-fluid">
-  <h1 class="text-center">SOY LA VISTA DEL PRODUCTO</h1> 
-  <div class="text-center">
-      <img src="/storage/{{$product->image}}" class="img-fluid">
-  </div>
-  <h3 class="text-center"> {{$product->name}} </h3>     
-  <h6 class="text-center">{{$product->description}}</h6>      
-  <h5 class="text-center">Precio: ${{$product->price}}</h4>  
-</div> -->
-
-
-
-<!------ Include the above in your HEAD tag ---------->
-
-<div class="container">
-
-	
+<div class="container">	
 <div class="card">
 	<div class="row">
 		<aside class="col-sm-5 border-right">
 <article class="gallery-wrap"> 
 <div class="img-big-wrap">
-  <div> <a href="#"><img src="/storage/{{$product->image}}" ></a></div>
+  <div> <a href="#"><img src="{{ asset('/storage/uploads/' . $product->image) }}" ></a></div>
 </div> <!-- slider-product.// -->
 <div class="img-small-wrap">
-  <div class="item-gallery"> <img src="/storage/{{$product->image}}"> </div>
+  <div class="item-gallery"> </div>
   
 </div> <!-- slider-nav.// -->
 </article> <!-- gallery-wrap .end// -->
