@@ -10,7 +10,7 @@
      @foreach ($products as $product)
       <article class="col-md-4 product-grid text-center">
         <div class="image">
-          <a href="#">
+          <a href="/productos/{{$product->id}}">
             {{-- {{dd($product)}}; --}}
            <img src="{{ asset('/storage/uploads/' . $product->image) }}" alt="{{$product->name}}" class="img-thumbnail">
           </a>
