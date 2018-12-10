@@ -1,26 +1,18 @@
 
 	<h1>Agregar Productos</h1>
-{{--
-	@if (count($errors))
-		<div class="alert alert-danger">
-			@foreach ($errors->all() as $error)
-				<p>{{ $error }}</p>
-			@endforeach
-		</div>
-	@endif
 
-	--}}
-	@if (count(@errors)>0)
+	@if (count($errors) > 0)
 		<div class="alert alert-danger">
 			<ul>
-				@foreach ($errors->all as $error)
+				@foreach ($errors->all() as $error)
 					<li>{{$error}}</li>
 				@endforeach
 			</ul>
 		</div>
  @endif
+ {{-- {{$mensaje}} --}}
 
-	<form action="/Product" method="POST" enctype="multipart/form-data">
+	<form action="/create" method="POST" enctype="multipart/form-data">
 		@csrf
         <div class="form-group">
             <label for="name">Nombre</label>

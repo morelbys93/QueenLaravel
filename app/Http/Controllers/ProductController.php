@@ -7,37 +7,46 @@ use App\Product;
 
 class ProductController extends Controller
 {
-    public function show()
-    {
-        return view('products.create');
-    }
-    public function show1()
+    public function index()
     {
         $products=Product::all();
 
         return view('product', compact('products'));
     }
 
-    public function create(Request $request){
-      $this->validate($request,[
-        'name'=>'required|string|max: 60|',
+    public function create()
+    {
+        return view('products.create');
+    }
+
+    public function store(Request $request){
+      $this->validate($request, [
+        'name'=>'required|string|max:60|',
         'description'=>'required|max:255|',
         'image'=>'image',
         'price'=>'required',
         'type'=>'required',
         'promoted'=>'required',
         'slider'=> 'required',
-
       ]);
 
+      $path = $request->file('image')->store('uploads', 'public');
+      //Hay que crear el simlink a storage usando: php artisan storage:link
+
       $product= new Product;
-        $product->name = $request['name'];
-        $product->description = $request['description'];
-        $product->image = $request['image'];
-        $product->price = $request['price'];
-        $product->type = $request['type'];
-        $product->promoted = $request['promoted'];
-        $product->slider = $request['slider'];
+
+      $product->name = $request['name'];
+      $product->description = $request['description'];
+      $product->image = $path;
+      $product->price = $request['price'];
+      $product->type = $request['type'];
+      $product->promoted = $request['promoted'];
+      $product->slider = $request['slider'];
+      $product->save();
+
+      $mensaje = "producto guradado con éxito";
+
+      return redirect("/create");
 
       }
 
