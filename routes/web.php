@@ -19,5 +19,5 @@ Route::get('/productos', 'ProductController@index');
 
 Route::get('/create', 'ProductController@create'); //Fomulario de carga
 Route::post('/create', 'ProductController@store'); //Guarda en Base de Datos
-
+Route::get('/edit', 'ProductController@edit');//formulacion de edicion de productos
 Route::get('/productos/{id}', 'ProductController@MostrarProducto');
