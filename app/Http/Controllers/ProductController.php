@@ -46,18 +46,18 @@ class ProductController extends Controller
 
       $mensaje = "producto guradado con éxito";
 
-      return redirect("/create");
+      return redirect("/productos");
 
       }
 
     public function MostrarProducto($id)
     {
-        $product=Product::find($id);
-        return view('products.vistaproducto', compact('product'));
+      $product=Product::find($id);
+      return view('products.vistaproducto', compact('product'));
 
     }
-    public function edit()
-    {
-        return view('products.edit');
+    public function edit($id)
+  {   $product=Product::find($id);
+      return view('products.edit', compact('product'));
     }
 }

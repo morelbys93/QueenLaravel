@@ -1,12 +1,7 @@
 
 	<h1>Agregar Productos</h1>
 
-<<<<<<< HEAD
-	
-	@if (count(@errors)>0)
-=======
 	@if (count($errors) > 0)
->>>>>>> 47bc0d4a2d97cd0969c86d204dd8a295eba31a12
 		<div class="alert alert-danger">
 			<ul>
 				@foreach ($errors->all() as $error)
@@ -15,11 +10,6 @@
 			</ul>
 		</div>
  @endif
-<<<<<<< HEAD
- --}}
-=======
- {{-- {{$mensaje}} --}}
->>>>>>> 47bc0d4a2d97cd0969c86d204dd8a295eba31a12
 
 	<form action="/create" method="POST" enctype="multipart/form-data">
 		@csrf
