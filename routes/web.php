@@ -15,7 +15,9 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index');
 Route::get('/faqs', 'FaqsController@index');
-Route::get('/productos', 'ProductController@show1');
-Route::get('/create', 'ProductController@show');
-Route::get('/productos/{id}', 'ProductController@MostrarProducto');
+Route::get('/productos', 'ProductController@index');
 
+Route::get('/create', 'ProductController@create'); //Fomulario de carga
+Route::post('/create', 'ProductController@store'); //Guarda en Base de Datos
+
+Route::get('/productos/{id}', 'ProductController@MostrarProducto');

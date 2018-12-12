@@ -1,39 +1,45 @@
+@extends('layouts.app')
 
-	<h1>Agregar Productos</h1>
-{{--
-	@if (count($errors))
-		<div class="alert alert-danger">
-			@foreach ($errors->all() as $error)
-				<p>{{ $error }}</p>
-			@endforeach
-		</div>
-	@endif
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+<<<<<<< HEAD
 	
 	@if (count(@errors)>0)
+=======
+	@if (count($errors) > 0)
+>>>>>>> 47bc0d4a2d97cd0969c86d204dd8a295eba31a12
 		<div class="alert alert-danger">
 			<ul>
-				@foreach ($errors->all as $error)
+				@foreach ($errors->all() as $error)
 					<li>{{$error}}</li>
 				@endforeach
 			</ul>
 		</div>
  @endif
+<<<<<<< HEAD
  --}}
+=======
+ {{-- {{$mensaje}} --}}
+>>>>>>> 47bc0d4a2d97cd0969c86d204dd8a295eba31a12
 
-	<form action="/Product" method="POST" enctype="multipart/form-data">
+	<form action="/create" method="POST" enctype="multipart/form-data">
 		@csrf
-        <div class="form-group">
-            <label for="name">Nombre</label>
-            <input class="form-control" type="text" name="name" id="name" value="{{old('name')}}" />
-        </div>
+		<h1>Agregar Productos</h1>
+</form>
+		<div class="form-group">
+
+			<div class="form-group row">
+				<label for="name"> Nombre del producto </label>
+				<input type="text" class="form-control" id="name" placeholder="Ingrese aca el nombre del producto">
+				</div>
+  		</div>
         <div class="form-group">
             <label for="description">Descripcion</label>
             <input class="form-control" type="text" name="description" id="description"  value="{{old('description')}}"/>
         </div>
         <div class="form-group">
             <label for="image">Imagen</label>
-            <input class="form-control" type="file" name="image" id="image"  value="{{old('image')}}"/>
+            <input class="form-control" type="file" name="image" id="image"
         </div>
         <div class="form-group">
             <label for="price">Precio</label>
