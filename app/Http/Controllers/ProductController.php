@@ -33,10 +33,10 @@ class ProductController extends Controller
       $path = $request->file('image')->store('uploads', 'public');
 
       $product= new Product;
-      
+
       $product->name = $request['name'];
       $product->description = $request['description'];
-      $product->image = $path;
+      $product->image = $request->file('image')->store('products');
       $product->price = $request['price'];
       $product->type = $request['type'];
       $product->promoted = $request['promoted'];
@@ -58,5 +58,13 @@ class ProductController extends Controller
     public function edit($id)
   {   $product=Product::find($id);
       return view('products.edit', compact('product'));
+    }
+
+    public function destroy($id)
+    {
+    	$product = Product::find($id);
+        $product->actors()->sync([]);
+    	$movie->delete();
+    	return 'Bien';
     }
 }
