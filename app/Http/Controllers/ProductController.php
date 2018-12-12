@@ -31,10 +31,9 @@ class ProductController extends Controller
       ]);
 
       $path = $request->file('image')->store('uploads', 'public');
-      //Hay que crear el simlink a storage usando: php artisan storage:link
 
       $product= new Product;
-
+      
       $product->name = $request['name'];
       $product->description = $request['description'];
       $product->image = $path;

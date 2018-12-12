@@ -1,4 +1,5 @@
-
+@extends('layouts.app')
+@section('content')
 	<h1>Agregar Productos</h1>
 
 	@if (count($errors) > 0)
@@ -45,3 +46,4 @@
         	<button class="btn btn-primary" type="submit" name="button">Agregar</button>
         </div>
     </form>
+@endsection
