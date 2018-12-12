@@ -18,7 +18,7 @@
         <h4 class="text-center">{{$product->name}}</h4>
         <h6 class="text-center">{{$product->description}}</h6>
         <h4 class="text-center">Precio: ${{$product->price}}</h4>
-        <button type="button" class="btn btn-primary">COMPRAR</button>
+        <button type="button" class="btn btn-primary">COMPRARLO</button>
       </article>
       @endforeach
     </div>

@@ -9,7 +9,7 @@
 		</div>
 	@endif
 
-	--}}
+	
 	@if (count(@errors)>0)
 		<div class="alert alert-danger">
 			<ul>
@@ -19,6 +19,7 @@
 			</ul>
 		</div>
  @endif
+ --}}
 
 	<form action="/Product" method="POST" enctype="multipart/form-data">
 		@csrf
