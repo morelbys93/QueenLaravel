@@ -63,8 +63,7 @@ class ProductController extends Controller
     public function destroy($id)
     {
     	$product = Product::find($id);
-        $product->actors()->sync([]);
-    	$movie->delete();
-    	return 'Bien';
+    	$product->delete();
+    	return view('products.vistaproducto', compact('product'));
     }
 }
