@@ -1,11 +1,12 @@
+<title> QueenCandy | Productos ~ </title>
 @extends('layouts.app')
 
-<link rel="stylesheet" href="css/styleregister.css">
+<link rel="stylesheet" href="css/styles.css">
 
 @section('content')
   <div class="container-fluid">
     <h1 class="text-center">Productos</h1>
-    <h4 class="text-center">Elaborados con materias primas frescas y de primera calidad le ofrecemos la mas amplia variedad de tortas y SARASA (TE LO DEJO A VOS MORE QUE SOS LA EXPERTA JE) </h4>
+    <h4 class="text-center">Elaborados con materias primas frescas y de primera calidad le ofrecemos la mas amplia variedad de tortas </h4>
     <div id="product-container" class="row">
      @foreach ($products as $product)
       <article class="col-md-4 product-grid text-center">

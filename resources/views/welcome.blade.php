@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Font Awesome -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	 <!-- SEBA: SUSPENDO MOMENTANEAMENTE EL CSS PRINCIPAL	<link rel="stylesheet" href="css/styles.css"> -->
+	<link rel="stylesheet" href="css/styles.css"> 
 		<!-- Favicon -->
 		<link rel="icon" href="images/ico.jpg" type="image/x-icon">
 		<!-- titulo -->
@@ -40,29 +40,7 @@
                  @endauth
              </div>
          @endif -->
-					<div class="menu">
-						<ul>
-							@guest
-							<li><a href="{{ route('register') }}"><i class="fas fa-registered"></i> Registro</a></li>
-							<!-- Forma opcional para las rutas {{ route('register') }} -->
-							<li><a href="/login"> <i class="fas fa-sign-in-alt"></i> Login</a> </li>
-							@else
-								<li>
-		              <a href="{{ route('logout') }}"
-		                  onclick="event.preventDefault();
-		                           document.getElementById('logout-form').submit();">
-		                  Logout
-		              </a>
-
-		              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-		                  {{ csrf_field() }}
-		              </form>
-		          	</li>
-							@endguest
-								<li><a href="/productos"></i> Productos</a></li>
-								<li><a href="/faqs"><i class="fas fa-question"></i> FAQ'S</a></li>
-				  	</ul>
-					</div>
+				
 			</nav>
 		</header>
 		<!-- Carousel -->
@@ -99,32 +77,8 @@
 	    <span class="sr-only">Next</span>
 	  </a>
 		</div>
-		<!-- productos -->
-	<h2 class="important_sections">Productos</h2>
-		<!-- Cuerpo principal del sitio -->
-		<section class="products"><!-- Contenedor de todos los productos -->
-			<div class="row-1">
-				@foreach ($destacados as $product)
-					<article class="producto"><!-- Contenedor de cada producto -->
-					<img class="main-photo" src="{{ asset('storage/uploads/' . $product->image)}}" alt=" " height="100%">
-
-					</article>
-				@endforeach
-		</div>
-		</section>
-
-		<!-- footer -->
-		<footer class="main-footer">
-			<section class="redes">
-        <ul>
-          <li> 	<a href="#">¡Seguinos en nuestras redes sociales! <i class="fas fa-thumbs-up"></i></a><br>
-						 		<a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
-								<a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-          </li>
-        </ul>
-      </section>
-		</footer>
+	
+	
 			<!-- bootsrap -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
