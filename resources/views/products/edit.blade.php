@@ -11,16 +11,16 @@
 		</div>
 	@endif
 
-	<form action="/edit/{{$product->id}}" method="POST">
+	<form action="{{ route('products.update', $product->id) }}" enctype="multipart/form-data" method="POST">
 		@csrf
-		@method('PUT')
+		@method('PATCH')
 					<div class="form-group">
 							<label for="name">Nombre del producto</label>
 							<input class="form-control" type="text" name="name" id="name" value="{{old('name',  $product->name)}}" />
 					</div>
 	        <div class="form-group">
 	            <label for="description">Descripcion</label>
-	            <input class="form-control" type="text" name="description" id="description"  value="{{old('description', $product->description)}}"/>
+	            <textarea class="form-control" type="text" name="description" id="description"  value=""> {{ old('description', $product->description) }} </textarea>
 	        </div>
 	        <div class="form-group">
 	            <label for="image">Imagen</label>
@@ -42,8 +42,8 @@
 	            <label for="slider">Carrousel</label>
 	            <input class="form-control" type="number" name="slider" id="slider" value="{{old('slider', $product->slider)}}"/>
 	        </div>
-	        <div class="form-group">
-	        	<button class="btn btn-primary" type="submit" name="button">Modificar Producto</button>
-	        </div>
+
+	        	<button class="btn btn-primary" type="submit">Modificar Producto</button>
+	        
 	    </form>
 @endsection
