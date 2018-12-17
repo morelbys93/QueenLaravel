@@ -56,14 +56,32 @@ class ProductController extends Controller
 
     }
     public function edit($id)
-  {   $product=Product::find($id);
+    {   $product=Product::find($id);
       return view('products.edit', compact('product'));
+    }
+
+    public function update(Request $request, Product $product)
+    {
+      $request -> validate([
+
+          'name'=>'required|string|max:60|',
+          'description'=>'required|max:255|',
+          'image'=>'image',
+          'price'=>'required',
+          'type'=>'required',
+          'promoted'=>'required',
+          'slider'=> 'required',
+        ]);
+        $product->update($request->all());
+        return redirect()->route('productos');
+
     }
 
     public function destroy($id)
     {
     	$product = Product::find($id);
     	$product->delete();
-    	return view('products.vistaproducto', compact('product'));
+    	return redirect('/productos');
     }
+
 }

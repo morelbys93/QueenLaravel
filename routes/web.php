@@ -12,13 +12,15 @@
 */
 
 Auth::routes();
-
+Route::resource('products','ProductController');
 Route::get('/', 'HomeController@index');
 Route::get('/faqs', 'FaqsController@index');
-Route::get('/productos', 'ProductController@index');
+Route::get('/productos', 'ProductController@index')->name('productos');
 
 Route::get('/create', 'ProductController@create'); //Fomulario de carga
 Route::post('/create', 'ProductController@store'); //Guarda en Base de Datos
 Route::get('/edit/{id}', 'ProductController@edit');//formulacion de edicion de productos
 Route::post('/edit', 'ProductController@store');
 Route::get('/productos/{id}', 'ProductController@MostrarProducto');
+Route::delete('/delete', 'ProductController@destroy');
+Route::post('productos/{id}/edit', 'ProductController@update')->name('update');
