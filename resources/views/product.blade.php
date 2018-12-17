@@ -21,7 +21,7 @@
         <button type="button" class="btn btn-primary">COMPRARLO</button>
         <a href="/edit/{id}" class="btn btn-lg btn-warning text-uppercase"> Editar </a>
         {{-- <button type="button" class="btn btn-danger">Eliminar</button> --}}
-        {{-- <a href="/destroy/{id}" class="btn btn-lg btn-danger text-uppercase"> Eliminar </a> --}}
+        <a href="/destroy/{id}" class="btn btn-lg btn-danger text-uppercase"> Eliminar </a>
       </article>
       @endforeach
     </div>

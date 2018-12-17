@@ -2,7 +2,7 @@
 @section('content')
 
 	<h1>Editar Productos</h1>
-	
+
 	@if (count($errors))
 		<div class="alert alert-danger">
 			@foreach ($errors->all() as $error)
@@ -13,6 +13,7 @@
 
 	<form action="/edit/{{$product->id}}" method="POST">
 		@csrf
+		@method('PUT')
 					<div class="form-group">
 							<label for="name">Nombre del producto</label>
 							<input class="form-control" type="text" name="name" id="name" value="{{old('name',  $product->name)}}" />
