@@ -73,14 +73,14 @@ class ProductController extends Controller
           'slider'=> 'required',
         ]);
         $product->update($request->all());
-        return redirect()->route('productos');
+        return redirect()->route('lista');
 
     }
 
     public function destroy(Product $product)
     {
     	$product->delete();
-    	return redirect()->route('productos');
+    	return redirect()->route('lista');
     }
     public function lista()
      {
