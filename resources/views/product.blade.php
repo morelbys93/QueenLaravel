@@ -22,14 +22,10 @@
         <h4 class="text-center">{{$product->name}}</h4>
         <h6 class="text-center">{{$product->description}}</h6>
         <h4 class="text-center">Precio: ${{$product->price}}</h4>
-<<<<<<< HEAD
-        <button type="button" class="btn btn-primary">COMPRARLO</button>
-=======
+
         <a href="#" class="btn btn-primary" role="button">Comprar</a>
-        <a href="/edit/{id}" class="btn btn-warning" role="button">Editar</a>
-        <a href="/destroy/{id}" class="btn btn-danger" role="button">Eliminar</a>
->>>>>>> 96f12fab40dee88019e304d25bc6ccd93d572930
         
+
       </article>
       @endforeach
     </div>

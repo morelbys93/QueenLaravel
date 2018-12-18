@@ -41,7 +41,7 @@
              					 @method('PUT')
              					 @method('DELETE')
 
-             			 <button type="submit" class="btn btn-danger text-uppercase">Delete </button>
+             			 <button type="submit" class="btn btn-danger text-uppercase">BORRAR </button>
              		</form>
                </td>
            </tr>

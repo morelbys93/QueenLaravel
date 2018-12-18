@@ -18,20 +18,16 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="public/css/styles.css">
-<<<<<<< HEAD
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-=======
-
-  
-    <link rel="stylesheet" href="<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
->>>>>>> 96f12fab40dee88019e304d25bc6ccd93d572930
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <!------ Include the above in your HEAD tag ---------->
+
 </head>
 <body>
-    
+
 <!--Main Navigation-->
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
@@ -44,11 +40,11 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                               
-                               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    
 
- 
+                               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
 
@@ -58,7 +54,7 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
-                       
+
                         @guest
 
                         <li class="nav-item">
@@ -183,7 +179,7 @@
         <!-- Grid column -->
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
 
-          
+
 
         </div>
         <!-- Grid column -->
@@ -241,9 +237,6 @@
     <!-- Copyright -->
 
   </footer>
-  <!-- Footer -->
-=======
 
->>>>>>> 0fcb04205710b251801aab45121f5bc4f1f88fea
 </body>
 </html>
