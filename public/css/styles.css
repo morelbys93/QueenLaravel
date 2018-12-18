@@ -9,6 +9,9 @@
 ul {
 	padding: 0;
 }
+a{
+	text-decoration: none;
+}
 
 li {
 	list-style-type: none;
@@ -149,7 +152,16 @@ div.menu {
 	border-radius: 10px;
 }
 
-
+div #footer {
+	padding: 0;
+	
+}
+.container-fluid #materias {
+	font-size: 16;
+}
+.container-fluid #materias2 {
+	font-size: 20;
+}
 
 /*************************************************************************/
 /******************************TABLET*************************************/
@@ -251,11 +263,10 @@ div.menu {
 		}
 		.logo {
 
-		width: 120px;
-		height: 90px;
+		width: 50px;
+		height: 35px;
 		display: flex;
-		background-color: #000;
-
+		
 
 		}
 
@@ -322,3 +333,13 @@ div.menu {
 	.main-nav {
 
 	}
+
+	ul a {
+		padding: 10px;
+		color: black;
+		text-decoration: none;
+		
+	}
+	ul a:hover { 
+		color: grey;
+	  }

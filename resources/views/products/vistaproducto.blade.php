@@ -1,5 +1,5 @@
 @extends('layouts.app')
-<link rel="stylesheet" href="../css/styleregister.css">
+<link rel="stylesheet" href="../css/styles.css">
 @section('content')
 
 <div class="container">
