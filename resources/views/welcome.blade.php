@@ -1,5 +1,5 @@
 @extends('layouts.app')
-<link rel="stylesheet" href="css/styleregister.css"></html>
+<link rel="stylesheet" href="css/styles.css"></html>
 
 <!DOCTYPE html>
 <html>

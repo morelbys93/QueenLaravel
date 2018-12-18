@@ -38,33 +38,12 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-<<<<<<< HEAD
+
                                
                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     
-=======
 
-                <!------ BUSCADOR , COMO HACEMOS QUE ANDE?---------->
-                <div class="container">
-                        <div class="row">
-                            <div class="col-sm-6 col-sm-offset-3">
-                                <div id="imaginary_container">
-                                    <div class="input-group stylish-input-group">
-                                        <input type="text" class="form-control"  placeholder="Search" >
-                                        <span class="input-group-addon">
-                                            <button type="submit">
-                                                <span class="glyphicon glyphicon-search"></span>
-                                            </button>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <!------ FIN BUSCADOR ---------->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
->>>>>>> 0fcb04205710b251801aab45121f5bc4f1f88fea
+ 
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
 
@@ -76,14 +55,11 @@
                         <!-- Authentication Links -->
                        
                         @guest
-<<<<<<< HEAD
+
                         <li class="nav-item">
                                 <a class="text-uppercase font-weight-bold" href="/productos">
                                     Productos</a>
                             </li>
-=======
-
->>>>>>> 0fcb04205710b251801aab45121f5bc4f1f88fea
                             <li class="nav-item">
                                 <a class="text-uppercase font-weight-bold" href="{{ route('login') }}">{{ __('Ingresá') }}</a>
                             </li>
@@ -132,7 +108,6 @@
         </main>
     </div>
 
-<<<<<<< HEAD
    <!-- Footer -->
 <footer class="page-footer font-small unique-color-dark">
 
@@ -215,10 +190,10 @@
           <h6 class="text-uppercase font-weight-bold">Mapa del sitio</h6>
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>
-            <a href="#!">Mi cuenta</a>
+            <a href="/login">Mi cuenta</a>
           </p>
           <p>
-            <a href="#!">Registrarse</a>
+            <a href="/register!">Registrarse</a>
           </p>
           <p>
             <a href="#!">Programa de beneficios</a>
