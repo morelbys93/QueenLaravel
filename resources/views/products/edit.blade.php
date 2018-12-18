@@ -1,8 +1,6 @@
 @extends('layouts.app')
 @section('content')
 
-	<h1>Editar Productos</h1>
-
 	@if (count($errors))
 		<div class="alert alert-danger">
 			@foreach ($errors->all() as $error)
@@ -11,9 +9,11 @@
 		</div>
 	@endif
 
-	<form action="{{ route('products.update', $product->id) }}" enctype="multipart/form-data" method="POST">
+	<form class="container" action="{{ route('products.update', $product->id) }}" enctype="multipart/form-data" method="POST">
+
 		@csrf
 		@method('PATCH')
+				<h3>Editar Productos</h3>
 					<div class="form-group">
 							<label for="name">Nombre del producto</label>
 							<input class="form-control" type="text" name="name" id="name" value="{{old('name',  $product->name)}}" />
@@ -44,6 +44,6 @@
 	        </div>
 
 	        	<button class="btn btn-primary" type="submit">Modificar Producto</button>
-	        
-	    </form>
+
+
 @endsection

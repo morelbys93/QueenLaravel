@@ -77,11 +77,16 @@ class ProductController extends Controller
 
     }
 
-    public function destroy($id)
+    public function destroy(Product $product)
     {
-    	$product = Product::find($id);
     	$product->delete();
-    	return redirect('/productos');
+    	return redirect()->route('productos');
     }
+    public function lista()
+     {
+       $products = Product::Paginate(10);
+       return view('products.listaAdmin', ['products'=>$products]);
+
+     }
 
 }

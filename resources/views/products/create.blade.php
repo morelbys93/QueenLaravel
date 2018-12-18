@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('content')
-	<h1>Agregar Productos</h1>
 
 	@if (count($errors) > 0)
 		<div class="alert alert-danger">
@@ -12,15 +11,16 @@
 		</div>
  @endif
 
-	<form action="/create" method="POST" enctype="multipart/form-data">
+	<form class="container" action="/create" method="POST" enctype="multipart/form-data">
 		@csrf
+			<h3>Agregar Productos</h3>
         <div class="form-group">
             <label for="name">Nombre</label>
             <input class="form-control" type="text" name="name" id="name" value="{{old('name')}}" />
         </div>
         <div class="form-group">
             <label for="description">Descripcion</label>
-            <input class="form-control" type="text" name="description" id="description"  value="{{old('description')}}"/>
+            <textarea class="form-control" type="text" name="description" id="description"  value="">{{old('description')}}</textarea>
         </div>
         <div class="form-group">
             <label for="image">Imagen</label>

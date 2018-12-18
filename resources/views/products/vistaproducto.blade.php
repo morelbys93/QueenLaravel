@@ -60,8 +60,12 @@
 
 	</div> <!-- row.// -->
 	<hr>
-	<a href="#" class="btn btn-lg btn-primary text-uppercase"> COMPRAR </a>
-	<a href="/edit/{{$product->id}}" class="btn btn-lg btn-warning text-uppercase"> Editar </a>
+	<div class="container">
+		<a href="#" class="btn btn-lg btn-primary text-uppercase"> COMPRAR </a>
+		
+	</div>
+
+</form>
 	</article> <!-- card-body.// -->
 		</aside> <!-- col.// -->
 	</div> <!-- row.// -->
@@ -70,9 +74,5 @@
 
 </div>
 <!--container.//-->
-
-
-
-
 
 @endsection
