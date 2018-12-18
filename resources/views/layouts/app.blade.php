@@ -17,13 +17,13 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="public/css/styles.css">
-
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+   
 
 </head>
 <body>
@@ -31,9 +31,9 @@
 <!--Main Navigation-->
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-            <div class="container">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{-- <a class="logo" href="{{ url('/') }}"> <img src="images/ico.png" alt="logotipo"> --}}
+                    <a class="logo" href="{{ url('/') }}"> <img src="images/ico.png" alt="logotipo">
 
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -74,8 +74,10 @@
 
 
                         @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        
+                            
+                        <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
@@ -86,7 +88,7 @@
                                         {{ __('Logout') }}
                                     </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" ">
                                         @csrf
                                     </form>
 
@@ -128,24 +130,24 @@
           <div class="col-md-6 col-lg-7 text-center text-md-right">
 
             <!-- Facebook -->
-            <a class="fb-ic">
-              <i class="fa fa-facebook white-text mr-4"> </i>
+            <a href="http://facebook.com"class="fb-ic">
+              <i class="fab fa-facebook white-text mr-4"> </i>
             </a>
             <!-- Twitter -->
-            <a class="tw-ic">
-              <i class="fa fa-twitter white-text mr-4"> </i>
+            <a href="http://twitter.com" class="tw-ic">
+              <i class="fab fa-twitter white-text mr-4"> </i>
             </a>
             <!-- Google +-->
-            <a class="gplus-ic">
-              <i class="fa fa-google-plus white-text mr-4"> </i>
+            <a href="http://google.com" class="gplus-ic">
+              <i class="fab fa-google-plus white-text mr-4"> </i>
             </a>
             <!--Linkedin -->
-            <a class="li-ic">
-              <i class="fa fa-linkedin white-text mr-4"> </i>
+            <a href="http://linkedin.com" class="li-ic">
+              <i class="fab fa-linkedin white-text mr-4"> </i>
             </a>
             <!--Instagram-->
-            <a class="ins-ic">
-              <i class="fa fa-instagram white-text"> </i>
+            <a href="http://instagram.com" class="ins-ic">
+              <i class="fab fa-instagram white-text"> </i>
             </a>
 
           </div>
